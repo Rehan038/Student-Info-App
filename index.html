@@ -4,14 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Information</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <button id="theme-toggle" class="icon-btn" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+
   <main class="student-card">
-    <h1>Student Information</h1>
-    <p><strong>Name:</strong> John</p>
-    <p><strong>Register Number:</strong> 101</p>
-    <p><strong>Programme:</strong> MCA</p>
+    <header class="card-header">
+      <div class="avatar" aria-hidden="true">J</div>
+      <div class="header-text">
+        <h1>Student Information</h1>
+        <p class="subtitle">Official student profile</p>
+      </div>
+      <span class="status-badge">Active</span>
+    </header>
+
+    <hr class="divider">
+
+    <section class="info-list">
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">🧑</span>
+        <span class="info-label">Name</span>
+        <span class="info-value">John</span>
+      </div>
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">🔢</span>
+        <span class="info-label">Register Number</span>
+        <span class="info-value">101</span>
+      </div>
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">🎓</span>
+        <span class="info-label">Programme</span>
+        <span class="info-value">MCA</span>
+      </div>
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">📅</span>
+        <span class="info-label">Academic Year</span>
+        <span class="info-value">2025 - 2026</span>
+      </div>
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">✉️</span>
+        <span class="info-label">Email</span>
+        <span class="info-value">john@example.com</span>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="attendance">
+      <div class="attendance-header">
+        <span class="info-label">Attendance</span>
+        <span class="attendance-percent" id="attendance-percent">92%</span>
+      </div>
+      <div class="progress-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Attendance percentage">
+        <div class="progress-fill" id="attendance-fill" style="width: 0%"></div>
+      </div>
+    </section>
+
+    <div class="card-actions">
+      <button id="print-btn" class="btn btn-primary" type="button">🖨️ Print ID Card</button>
+    </div>
+
+    <p class="last-updated">Last viewed: <span id="last-updated"></span></p>
   </main>
 
   <script src="script.js"></script>
