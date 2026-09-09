@@ -55,7 +55,7 @@ All work happens on feature branches cut from an up-to-date `main`. No commits a
 | #4 | `feature/contact` | `main` | Add contact information |
 | #5 | `feature/student-name` | `main` | Update application heading |
 | #6 | `feature/app-title` | `main` | Update application title (conflict resolved) |
-| #7 | `docs/readme` | `main` | Document branching strategy and conflict resolution |
+| #7 | `docs/readme` | `main` | Document branching strategy and conflict resolution|
 
 ## Merge conflict
 
