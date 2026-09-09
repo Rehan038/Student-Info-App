@@ -43,3 +43,21 @@ document.addEventListener("DOMContentLoaded", () => {
     attendanceFill.style.width = `${targetPercent}%`;
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const detailsBtn = document.getElementById("details-btn");
+  const extraDetails = document.getElementById("extra-details");
+
+  detailsBtn.addEventListener("click", () => {
+    const isHidden = extraDetails.hasAttribute("hidden");
+    if (isHidden) {
+      extraDetails.removeAttribute("hidden");
+      detailsBtn.textContent = "Hide Details";
+      detailsBtn.setAttribute("aria-expanded", "true");
+    } else {
+      extraDetails.setAttribute("hidden", "");
+      detailsBtn.textContent = "Show Details";
+      detailsBtn.setAttribute("aria-expanded", "false");
+    }
+  });
+});
