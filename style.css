@@ -114,6 +114,13 @@ h1 {
   color: var(--text-muted);
 }
 
+.section-title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
 .status-badge {
   flex-shrink: 0;
   background: rgb(16 185 129 / 15%);
