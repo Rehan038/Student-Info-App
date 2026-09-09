@@ -6,9 +6,9 @@ A simple webpage that displays student information in a card layout, built as a 
 
 | Role | Name | Responsibility |
 |------|------|-----------------|
-| Team lead / Backend developer | Rehan (Student 1) | Repository setup, merge management, contact info feature |
-| Frontend / UI developer | <name> (Student 2) | UI styling and layout |
-| JavaScript developer | Rehan (Student 3) | Interactive JavaScript features |
+| Team lead / Backend developer | Student 1 | Repository setup, merge management, contact info feature |
+| Frontend / UI developer | Student 2 | UI styling and layout |
+| JavaScript developer | Student 3 | Interactive JavaScript features |
 
 ## Project description
 
